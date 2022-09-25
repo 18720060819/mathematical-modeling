@@ -7,6 +7,13 @@
 - 🔥如果你觉得它对你很有帮助, 请你也分享给需要学习的朋友们！
 - 🔥如果觉得有用，请点个star 吧！谢谢！
 
+## 💯其他资源（由于仓库大小限制，分开存储）
+1.  [各类软件教程](https://gitee.com/a1852783649/various-software-tutorials.git)
+2.  [按模型分类的优秀论文](https://gitee.com/a1852783649/refer_paper.git)
+3.  [研赛优秀论文](https://gitee.com/a1852783649/excellent-papers.git)
+4.  [国赛优秀论文](https://gitee.com/a1852783649/mathematical-modeling-Excellent-Thesis-of-the-National-Championship.git)
+5.  [美赛优秀论文](https://gitee.com/a1852783649/excellent-thesis-of-meisai.git)
+
 ## 🍭 如何参与开源项目
 
 1.  Fork 本仓库
