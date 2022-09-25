@@ -1,0 +1,14 @@
+%微积分和微分方程
+% diff - 差分
+% diff - 符号导函数
+% trapz - 梯形积分法
+% quad8 - 高精度数值积分
+% int - 符号积分
+% dblquad - 矩形域二重积分
+% ode45 - 常微分方程
+% dsolve - 符号微分方程
+% *polyint - 多项式积分法
+% *quadg - 高斯积分法
+% *quad2dg - 矩形域高斯二重积分
+% *dblquad2 - 非矩形域二重积分 
+% *rk4 - 常微分方程RungeKutta法

@@ -1,0 +1,91 @@
+聚类分析主要过程
+（1）将数据展绘
+% 随机生成3个中心以及标准差
+s = rng(5,'v5normal');
+mu = round((rand(3,2)-0.5)*19)+1;
+sigma = round(rand(3,2)*40)/10+1;
+X = [mvnrnd(mu(1,:),sigma(1,:),200);
+mvnrnd(mu(2,:),sigma(2,:),300);
+mvnrnd(mu(3,:),sigma(3,:),400)];
+% 作图
+P1 = figure;clf;
+scatter(X(:,1),X(:,2),10,'ro');
+
+
+（2）利用不同的算法进行带入分析
+1 高斯混合聚类代码
+高斯混合聚类的步骤：首先假设样本集具有一些规律，包括可以以α \alphaα参数作为比例分为k kk类且每类内符合高斯分布。
+然后根据贝叶斯原理利用极大似然法同时求出决定分类比例的α \alphaα和决定类内高斯分布的μ \muμ、Σ \SigmaΣ。
+最后将样本根据α \alphaα、μ \muμ、Σ \SigmaΣ再次通过贝叶斯原理求出样本该分在哪个簇。
+整个步骤下来，
+这种做法其实就是一种原型聚类：通过找到可以刻画样本的原型（α \alphaα、μ \muμ、Σ \SigmaΣ参数），迭代得到α \alphaα、μ \muμ、Σ \SigmaΣ参数的最优解。
+将逻辑思路理清楚之后，高斯混合聚类并不复杂，只是因为它同时运用了高斯分布、贝叶斯公式、极大似然法和聚类的原理和思想，加上高数化简求解的步骤，而导致初读时比较容易感到有些混乱。
+% 等高线
+options = statset('Display','off');
+gm = gmdistribution.fit(X,3,'Options',options);
+P6 = figure;clf
+scatter(X(:,1),X(:,2),10,'ro');
+hold on
+ezcontour(@(x,y) pdf(gm,[x,y]),[-15 15],[-15 10]);
+hold off
+P7 = figure;clf
+scatter(X(:,1),X(:,2),10,'ro');
+hold on
+ezsurf(@(x,y) pdf(gm,[x,y]),[-15 15],[-15 10]);
+hold off
+view(33,24)
+cluster1 = (cidx3 == 1);
+cluster3 = (cidx3 == 2);
+% 通过观察，K均值方法的第二类是gm的第三类
+cluster2 = (cidx3 == 3);
+% 计算分类概率
+P = posterior(gm,X);
+P8 = figure;clf
+plot3(X(cluster1,1),X(cluster1,2),P(cluster1,1),'r.')
+grid on;hold on
+plot3(X(cluster2,1),X(cluster2,2),P(cluster2,2),'bo')
+plot3(X(cluster3,1),X(cluster3,2),P(cluster3,3),'g*')
+legend('第 1 类','第 2 类','第 3 类','Location','NW')
+clrmap = jet(80); colormap(clrmap(9:72,:))
+ylabel(colorbar,'Component 1 Posterior Probability')
+view(-45,20);
+% 第三类点部分概率值较低，可能需要其他数据来进行分析。
+% 概率图
+P9 = figure;clf
+[~,order] = sort(P(:,1));
+plot(1:size(X,1),P(order,1),'r-',1:size(X,1),P(order,2),'b-',1:size(X,1),P(order,3),'y-');
+legend({'Cluster 1 Score' 'Cluster 2 Score' 'Cluster 3 Score'},'location','NW');
+ylabel('Cluster Membership Score');
+xlabel('Point Ranking');
+
+
+
+2 K均值聚类算法
+[cidx3,cmeans3,sumd3,D3] = kmeans(X,3,'dist','sqEuclidean');
+P4 = figure;clf;
+[silh3,h3] = silhouette(X,cidx3,'sqeuclidean');
+P5 = figure;clf
+ptsymb = {'bo','ro','go',',mo','c+'};
+MarkFace = {[0 0 1],[.8 0 0],[0 .5 0]};
+hold on
+for i =1:3
+clust = find(cidx3 == i);
+plot(X(clust,1),X(clust,2),ptsymb{i},'MarkerSize',3,'MarkerFace',MarkFace{i},'MarkerEdgeColor','black');
+plot(cmeans3(i,1),cmeans3(i,2),ptsymb{i},'MarkerSize',10,'MarkerFace',MarkFace{i});
+end
+hold off
+
+
+
+
+3 分层聚类算法代码
+又叫系统聚类，基本思路是将多个样本各作为一类，计算样本两两之间的距离，合并距离最近的两类成新的一类，
+然后再计算距离，再合并，直到只有一类为止。层次聚类可以处理分类数据和定量数据，但处理速度相对较慢，
+通常情况下需要结合相关结果进行主观判断聚类类别数量。
+eucD = pdist(X,'euclidean');
+clustTreeEuc = linkage(eucD,'average');
+cophenet(clustTreeEuc,eucD);
+P3 = figure;clf;
+[h,nodes] =? dendrogram(clustTreeEuc,20);
+set(gca,'TickDir','out','TickLength',[.002 0],'XTickLabel',[]);
+

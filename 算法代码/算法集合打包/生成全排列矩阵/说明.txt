@@ -1,0 +1,1 @@
+依次输入exchange  swap   tianchongJ即可，若想修改全排列矩阵的大小，可在MATLAB中打开tianchongJ修改J和N。

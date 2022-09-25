@@ -1,0 +1,8 @@
+% 数学规划
+% lp - 线性规划
+% linprog - 线性规划(在MATLAB5.3使用)
+% fmin - 一元函数极值
+% fminu - 多元函数极值拟牛顿法
+% fmins - 多元函数极值单纯形搜索法
+% constr - 非线性规划
+% fmincon - 非线性规划(在MATLAB5.3使用)

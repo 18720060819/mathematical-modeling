@@ -1,0 +1,17 @@
+%随机模拟和统计分析
+% max,min - 最大，最小值
+% sum - 求和
+% mean - 均值
+% std - 标准差
+% sort - 排序（升序）
+% sortrows - 按某一列排序(升序)
+% rand - [0，1]区间均匀分布随机数
+% randn - 标准正态分布随机数
+% randperm - 1...n 随机排列
+% regress - 线性回归
+% classify - 统计聚类
+% *trim - 坏数据祛除
+% *specrnd - 给定分布律随机数生成
+% *randrow - 整行随机排列
+% *randmix - 随机置换
+% *chi2test - 分布拟合度卡方检验

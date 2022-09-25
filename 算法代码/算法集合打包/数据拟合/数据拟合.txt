@@ -1,0 +1,11 @@
+% 数据拟合
+% interp1 - 一元函数插值
+% spline - 样条插值
+% polyfit - 多项式插值或拟合 
+% curvefit - 曲线拟合
+% caspe - 各种边界条件的样条插值
+% casps - 样条拟合(没有)
+% interp2 - 二元函数插值
+% griddata - 不规则数据的二元函数插值
+% *interp - 不单调节点插值
+% *lagrange - 拉格朗日插值法

@@ -1,0 +1,80 @@
+This is a self-contained package including the 2-D DWT and inverse DWT
+routines. However, the Idwt2.m and Iidwt2.m codes are slow and inefficient.
+We did not try to optimize the codes at all. If you need faster routines,
+you should download and install the Rice Wavelet Toolbox, which is available
+via Rice DSP web page http://www.dsp.rice.edu
+ 
+
+INSTALLATION:
+ download whmt.tar
+ 
+  tar -xf whmt.tar decomposes the tar file into many matlab .m files.
+
+
+
+Main routines:
+
+hdenoise.m : denoise a 2-D image using HMT with training. You can
+             also provide a pre-specified HMT model (no training).
+
+hmttrain.m : train HMT model for give 2-D wavelet transform.
+             All wavelet coefficients at each scale within each subband
+             are tied together to avoid overfitting of the model.
+
+hmtdeno.m : given 2-D wavelet transform and an HMT model, compute
+            the posterior state probabilities. Then, use filter
+            noisy wavelet coefficients to remove noise.
+
+hmtmodel.m : obtain an HMT model for real-world images without
+             training. This model produces good denoising performance
+             for many real-world images.
+
+Routines used by main routines:
+
+emhht.m : one step of EM algorithm for HH subband. Used by hmttrain.m
+emlht.m : same as emhht.m for LH subband.
+emhlt.m : same as emhht.m for HL subband.
+
+posthh.m : compute posterior state probabilities for HH subband.
+           Used by hmtdeno.m
+postlh.m : same as posthh.m for LH subband
+posthl.m : same as posthh.m for HL subband
+
+2-D DWT and inverse DWT routines:
+
+Idwt2.m : 2-D DWT
+Iidwt2.m : 2-D inverse DWT
+daubcqf.m : computes Daubechies wavelet filters
+makeh1.m, up.m : routines used by Idwt2.m and Iidwt2.m
+
+Other routines:
+
+gauss.m : gaussian density function
+testcon.m : compute convergence errors to stop HMT training
+vec2mat.m : used by hmtmodel.m 
+
+Examples:
+
+ex256.m    : denoising example of 256x256 Lena image
+             generate a noisy 256x256 Lena. Train HMT and denoise.
+ex512.m    : example using 512x512 Lena image.
+             generate a noisy 512x512 Lena. Train HMT and denoise.
+example2.m : denoising example 2.
+             generate a noisy Lena image. Use the HMT model in
+             lenamodel.hmt (no training) to denoise it.
+example3.m : denoising example 3.
+             generate a noisy Lena image. Use hmtmodel.m to obtain
+             an HMT model for general real-world images. Then, use
+             HMT denoising.
+
+Other files:
+
+lena256, lena512 : binary file containing original 256x256 and
+                   512x512 Lena images.
+                   used in ex256.m, ex512.m, example2.m, and example3.m
+lenamodel.mat : HMT model (ES,PS,MU,SI matrices) for 512x512
+                Lena with \sigma=0.1
+                Used in example2.m
+
+
+

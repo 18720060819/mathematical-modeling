@@ -1,0 +1,167 @@
+Dijkstra算法步骤
+（1）构造邻接矩阵
+（2）定义起始点
+（3）运行代码
+M=[  0     5     9   Inf   Inf   Inf   Inf
+   Inf     0   Inf   Inf    12   Inf   Inf
+   Inf     3     0    15   Inf    23   Inf
+   Inf     6   Inf     0   Inf     8     7
+   Inf    12   Inf     5     0   Inf    14
+   Inf   Inf   Inf   Inf   Inf     0    10
+   Inf   Inf   Inf   Inf   Inf   Inf     0];
+first=2;
+last=4;
+[m,n]=size(M);
+L=zeros(1,m);
+symbol=zeros(1,m);
+direction=zeros(1,m);
+for i=1:m
+    if(i~=first)
+        L(i)=inf;
+    end
+    direction(i)=first;
+end
+judge=1;
+while judge
+for i=1:m
+    if(symbol(i)==0)
+        min=L(i);
+        temporary=i;
+        break
+    end
+end
+for i=1:m
+    if(symbol(i)==0)
+        if(L(i)<min)
+            min=L(i);
+            temporary=i;
+        end
+    end
+end
+k=temporary;
+for j=1:m
+    if(symbol(1,j)==0)
+        if(M(k,j)==inf)
+            continue;
+        else
+            if(L(k)+M(k,j)<L(j))
+                L(j)=L(k)+M(k,j);
+                direction(j)=k;
+            end
+        end
+    end
+end
+symbol(k)=1;
+num=0;
+for i=1:m
+    if(symbol(i)==1)
+        num=num+1;
+    end
+end
+if(num==m)
+    judge=0;
+end
+end
+p=last;
+arrow=zeros(1,m);
+arrow(1)=last;
+i=2;
+while p~=first
+    arrow(1,i)=direction(p);
+    i=i+1;
+    p=direction(p);
+end
+distance=L(last);
+
+floyd 算法代码
+d=[inf 6 0 4 0 0 0
+   0 inf 0 0 5 0 0
+   4 7 inf 0 0 5 0
+   0 0 4 inf 0 3 0
+   0 0 2 0 inf 0 0
+   0 0 0 0 4 inf 5
+   0 0 0 0 6 0 inf];
+[m,n]=size(d);
+first=1;
+last=7;
+direction=zeros(m,m);
+for i=1:m
+    direction(:,i)=i;
+end
+for i=1:m
+    for j=1:m
+        for k=1:m
+            small=min(d(i,k),d(k,j));
+            if d(i,j)<small
+                d(i,j)=small;
+                direction(i,j)=direction(i,k);
+            end
+        end
+    end
+end
+arrow=zeros(1,m);
+arrow(1)=first;
+i=2;
+p=first;
+while p~=last
+    p=direction(p,last);
+    arrow(i)=p;
+    i=i+1;
+end
+
+
+生成树算法代码
+M=[ 0 17 11 inf inf inf
+    17 0 13 12 28 15
+    11 13 0 inf 19 inf
+    inf 12 inf 0 inf 16
+    inf 28 19 inf 0 10
+    inf 15 inf 16 10 0];
+[m,n]=size(M);
+X=zeros(m,n);
+Y=zeros(m);
+Z=zeros(m);
+Y(1)=1;
+for i=2:m
+    Z(i)=i;
+end
+judge=1;
+while judge
+for i=1:m
+    if(Y(i)~=0)
+        for j=1:m
+            if(Z(j)~=0)
+                min=M(i,j);
+                a=i;
+                b=j;
+            end
+        end
+    end
+end
+for i=1:m
+    if(Y(i)~=0)
+        for j=1:m
+            if(Z(j)~=0)
+                if(M(i,j)<min)
+                    min=M(i,j);
+                    a=i;
+                    b=j;
+                end
+            end
+        end
+    end
+end
+Y(b)=b;
+Z(b)=0;
+X(a,b)=1;
+X(b,a)=1;
+c=0;
+for i=1:m
+    if(Y(i)~=0)
+        c=c+1;
+    end
+end
+if(c==m)
+    judge=0;
+end
+end

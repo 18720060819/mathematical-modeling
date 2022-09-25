@@ -1,0 +1,35 @@
+基本函数代码，请将下属代码复制到Matlab函数输入中，将其保存在根目录下
+function [d,r]=floyd(a)
+n=size(a,1);
+% 初始化距离矩阵
+d=a;
+% 初始化路由矩阵
+for i=1:n
+    for j=1:n
+        r(i,j)=j;
+    end 
+end 
+r;
+
+% Floyd算法开始
+for k=1:n
+    for i=1:n
+        for j=1:n
+            if d(i,k)+d(k,j)<d(i,j)
+                d(i,j)=d(i,k)+d(k,j);
+                r(i,j)=r(i,k);
+            end 
+        end 
+    end
+    k;
+    d;
+    r;
+end
+d
+r
+
+复制到上面截至就可以了，直接调用是不可以的，因为a还没有赋值，下面是具体的符号解释
+a是距离矩阵，也就是各顶点间的距离
+R是路由矩阵，指的是找到各点之间的最短距离对应的路径，不懂得可以看一下原理
+例如
+a=[0 4 11;6 0 2;3 inf 0];
