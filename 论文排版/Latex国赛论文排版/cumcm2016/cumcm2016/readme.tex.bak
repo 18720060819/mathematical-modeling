@@ -1,0 +1,105 @@
+\documentclass{cumcmart}
+
+\begin{document}
+\title{高教社杯全国大学生数学建模竞赛\\
+    论文~\LaTeX{} }
+%\displaytitle命令用于在承诺书上显示论文题目，注意，不能换行，如果题目特别长，要进行适当的缩写
+\displaytitle{高教社杯全国大学生数学建模竞赛论文~\LaTeX{} 模板示例}
+%\school命令用于在承诺书上显示学校名称。按要求，此处应填写全称
+\school{国防科学技术大学}
+%以下命令分别显示队员及指导教师姓名
+\authorone{张三}
+\authortwo{李四}
+\authorthree{王五}
+\advisor{甲乙丙}
+\maketitle
+\begin{cnabstract}%此处没有采用sbstract命名，是为了将来如果要加入英文摘要时扩展的方便
+    本模板根据“2005~高教社杯全国大学生数学建模竞赛论文格式规范”中的相关规定制作。供参加
+全国大学生数学建模竞赛的同学们使用。制作该模板的目的在于推进竞赛论文格式规范化，
+推广~\LaTeX{}。
+
+    本模板将整篇论文视作“文章”（article），而不是“书”（book）。实现时，以~cctart 为基类。
+与~cctart.cls 的使用基本相同，具体请参考本文源文件。
+
+    为了实现比较好的兼容性，模板仅达到了~\cite{2} 中对竞赛论文的基本要求，而不包括额外的功能，
+也没有引入其他的宏包，请使用时根据需要自行添加。
+
+    模板发行包包括如下文件：
+    \begin{tabbing}
+      {}\qquad\qquad\= cumcmart.cls\qquad \= 模板主文件（必须）\\
+      {}\> declaration.tex \> 承诺书及编号页（必须。如有变动，请修改该文件）\\
+      {}\> readme.pdf \> 本文件\\
+      {}\> readme.tex \> 本文件源文件\\
+      {}\> example.tex \> 示例文件源文件（也可以参考~readme.tex）\\
+      {}\> example.pdf \> 示例文件
+    \end{tabbing}
+
+    模板的最新版本可以在~http://www.shumo.com，http://www.ai7.org 和~http://bbs.ctex.org 下载。
+有关于模板的任何问题，比如~Bug 提交、功能建议、赞助、宣传推广等，均可与~amao@shumo.com 联系。
+
+    感谢~sidneyliu 最初提出关于撰写竞赛论文模板的建议。\\[0.5cm]
+    \textbf{重要声明：
+    \begin{enumerate}
+      \item 任何个人或团体可以无限制的自由使用本模板。
+      \item 本模板目前尚未得到全国大学生数学建模竞赛组委会的认可，模板作者及~SHUMO.COM 对
+            使用该模板所引起的后果不负任何责任。
+    \end{enumerate}
+    }
+\end{cnabstract}
+
+%\tableofcontents\newpage%增加目录，要不要都可以。不想要的话，就在本行前加“%”（英文的百分号）
+一篇典型的数模竞赛论文，通常包括以下部分，当然，这些并不全是必须的。
+\section{问题的重述}
+\section{问题分析}
+\section{假设与符号}
+\section{模型的建立与求解}
+    考虑到竞赛论文通常不会太长，所以，预定义好的“定义”、“引理”、“定理”、“命题”、“例”等~5 种
+环境的编号都是统一编号，而“推论”的编号，以相应的“定理”编号作为主编号。例子如下：
+
+\begin{definition}
+  定义的例子。
+\end{definition}
+
+\begin{lemma}
+  引理的例子。
+\end{lemma}
+
+\begin{theorem}
+  定理的例子。
+\end{theorem}
+
+\begin{lemma}
+  第二个引理的例子。
+\end{lemma}
+
+\begin{theorem}
+  第二个定理的例子。
+\end{theorem}
+
+\begin{corollary}
+  推论的例子。
+\end{corollary}
+
+\begin{corollary}
+  第二个推论的例子。
+\end{corollary}
+
+\begin{proposition}
+  命题的例子。
+\end{proposition}
+
+\begin{example}
+  例的例子。
+\end{example}
+
+    注意，以上环境的结尾不包括段落结束符，需要根据情况手工添加。比如此处源文件中是空一行作为段落结束。
+\section{模型的检验}
+\section{进一步讨论}
+\section{模型的优缺点}
+
+\begin{thebibliography}{1}
+\bibitem{1} 全国大学生数学建模竞赛组委会, 2004~高教社杯全国大学生数学建模竞赛论文格式规范, 2004
+\bibitem{2} 全国大学生数学建模竞赛组委会, 2005~高教社杯全国大学生数学建模竞赛论文格式规范, 2005
+\end{thebibliography}
+
+\end{document}

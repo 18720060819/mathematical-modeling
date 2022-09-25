@@ -1,0 +1,126 @@
+\documentclass{cumcmart}
+\documentclass[12pt,a4paper]{article}
+%\documentclass[11pt,a4paper,fleqn]{article}
+\usepackage{CJK}
+\usepackage{latexsym,bm}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{indentfirst}
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{cases}
+\usepackage{wasysym}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                           重定义字体、字号命令                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\song}{\CJKfamily{song}}    % 宋体   (Windows自带simsun.ttf)
+\newcommand{\fs}{\CJKfamily{fs}}        % 仿宋体 (Windows自带simfs.ttf)
+\newcommand{\kai}{\CJKfamily{kai}}      % 楷体   (Windows自带simkai.ttf)
+\newcommand{\hei}{\CJKfamily{hei}}      % 黑体   (Windows自带simhei.ttf)
+\newcommand{\li}{\CJKfamily{li}}        % 隶书   (Windows自带simli.ttf)
+\newcommand{\you}{\CJKfamily{you}}      % 幼圆   (Windows自带simyou.ttf)
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     % 字号设置
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} % 字号设置
+\newcommand{\yichu}{\fontsize{32pt}{\baselineskip}\selectfont}      % 字号设置
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      % 字号设置
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      % 字号设置
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  % 字号设置
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}  % 字号设置
+\newcommand{\xiaosanhao}{\fontsize{15pt}{\baselineskip}\selectfont} % 字号设置
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}      % 字号设置
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  % 字号设置
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    % 字号设置
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   % 字号设置
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}  % 字号设置
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}    % 字号设置
+%%%%%%%%%  END %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\mb}[1]{\textcolor{blue}{#1}}
+\newcommand{\ml}[1]{\texttt{\textcolor{blue}{\char`\\ #1}}}
+\renewcommand{\baselinestretch}{1.2}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+\CJKtilde\CJKindent
+
+% 数学模式参数
+\setlength{\arraycolsep}{2 pt} \setlength{\jot}{3pt}
+\setlength{\abovedisplayskip}{8.5pt plus 3pt minus 4pt}
+\setlength{\belowdisplayskip}{8.5pt plus 3pt minus 4pt}
+\setlength{\abovedisplayshortskip}{20pt plus 2pt}
+\setlength{\belowdisplayshortskip}{4pt plus 2pt minus 2pt}
+%\setlength{\mathindent}{25pt}
+\title{高教社杯全国大学生数学建模竞赛\\
+    论文~\LaTeX{} 模板（CCT ver. 050828）示例}
+%\displaytitle命令用于在承诺书上显示论文题目，注意，不能换行，如果题目特别长，要进行适当的缩写
+\displaytitle{高教社杯全国大学生数学建模竞赛论文~\LaTeX{} 模板示例}
+%\school命令用于在承诺书上显示学校名称。按要求，此处应填写全称
+\school{国防科学技术大学}
+%以下命令分别显示队员及指导教师姓名
+\authorone{张三}
+\authortwo{李四}
+\authorthree{王五}
+\advisor{甲乙丙}
+\maketitle
+\begin{cnabstract}%此处没有采用sbstract命名，是为了将来如果要加入英文摘要时扩展的方便
+此处写摘要。
+
+摘要在整篇论文评阅中占有重要权重，请认真书写摘要（注意篇幅不能超过一页）。
+全国评阅时将首先根据摘要和论文整体结构及概貌对论文优劣进行初步筛选。
+\end{cnabstract}
+
+%\tableofcontents\newpage%增加目录，要不要都可以。不想要的话，就在本行前加“%”（英文的百分号）
+一篇典型的数模竞赛论文，通常包括以下部分，当然，这些并不全是必须的。
+\section{问题的重述}
+\section{问题分析}
+\section{假设与符号}
+\section{模型的建立与求解}
+    考虑到竞赛论文通常不会太长，所以，预定义好的“定义”、“引理”、“定理”、“命题”、“例”等~5 种
+环境的编号都是统一编号，而“推论”的编号，以相应的“定理”编号作为主编号。例子如下：
+
+\begin{definition}
+  定义的例子。
+\end{definition}
+
+\begin{lemma}
+  引理的例子。
+\end{lemma}
+
+\begin{theorem}
+  定理的例子。
+\end{theorem}
+
+\begin{lemma}
+  第二个引理的例子。
+\end{lemma}
+
+\begin{theorem}
+  第二个定理的例子。
+\end{theorem}
+
+\begin{corollary}
+  推论的例子。
+\end{corollary}
+
+\begin{corollary}
+  第二个推论的例子。
+\end{corollary}
+
+\begin{proposition}
+  命题的例子。
+\end{proposition}
+
+\begin{example}
+  例的例子。
+\end{example}
+
+    注意，以上环境的结尾不包括段落结束符，需要根据情况手工添加。比如此处源文件中是空一行作为段落结束。
+\section{模型的检验}
+\section{进一步讨论}
+\section{模型的优缺点}
+
+\begin{thebibliography}{1}
+\bibitem{1} 全国大学生数学建模竞赛组委会, 2004~高教社杯全国大学生数学建模竞赛论文格式规范, 2004
+\bibitem{2} 全国大学生数学建模竞赛组委会, 2005~高教社杯全国大学生数学建模竞赛论文格式规范, 2005
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,78 @@
+\documentclass{cumcmart}
+
+\begin{document}
+\title{高教社杯全国大学生数学建模竞赛\\
+    论文~\LaTeX{} 模板（CCT ver. 050828）示例}
+%\displaytitle命令用于在承诺书上显示论文题目，注意，不能换行，如果题目特别长，要进行适当的缩写
+\displaytitle{高教社杯全国大学生数学建模竞赛论文~\LaTeX{} 模板示例}
+%\school命令用于在承诺书上显示学校名称。按要求，此处应填写全称
+\school{国防科学技术大学}
+%以下命令分别显示队员及指导教师姓名
+\authorone{张三}
+\authortwo{李四}
+\authorthree{王五}
+\advisor{甲乙丙}
+\maketitle
+\begin{cnabstract}%此处没有采用sbstract命名，是为了将来如果要加入英文摘要时扩展的方便
+此处写摘要。
+
+摘要在整篇论文评阅中占有重要权重，请认真书写摘要（注意篇幅不能超过一页）。
+全国评阅时将首先根据摘要和论文整体结构及概貌对论文优劣进行初步筛选。
+\end{cnabstract}
+
+%\tableofcontents\newpage%增加目录，要不要都可以。不想要的话，就在本行前加“%”（英文的百分号）
+一篇典型的数模竞赛论文，通常包括以下部分，当然，这些并不全是必须的。
+\section{问题的重述}
+\section{问题分析}
+\section{假设与符号}
+\section{模型的建立与求解}
+    考虑到竞赛论文通常不会太长，所以，预定义好的“定义”、“引理”、“定理”、“命题”、“例”等~5 种
+环境的编号都是统一编号，而“推论”的编号，以相应的“定理”编号作为主编号。例子如下：
+
+\begin{definition}
+  定义的例子。
+\end{definition}
+
+\begin{lemma}
+  引理的例子。
+\end{lemma}
+
+\begin{theorem}
+  定理的例子。
+\end{theorem}
+
+\begin{lemma}
+  第二个引理的例子。
+\end{lemma}
+
+\begin{theorem}
+  第二个定理的例子。
+\end{theorem}
+
+\begin{corollary}
+  推论的例子。
+\end{corollary}
+
+\begin{corollary}
+  第二个推论的例子。
+\end{corollary}
+
+\begin{proposition}
+  命题的例子。
+\end{proposition}
+
+\begin{example}
+  例的例子。
+\end{example}
+
+    注意，以上环境的结尾不包括段落结束符，需要根据情况手工添加。比如此处源文件中是空一行作为段落结束。
+\section{模型的检验}
+\section{进一步讨论}
+\section{模型的优缺点}
+
+\begin{thebibliography}{1}
+\bibitem{1} 全国大学生数学建模竞赛组委会, 2004~高教社杯全国大学生数学建模竞赛论文格式规范, 2004
+\bibitem{2} 全国大学生数学建模竞赛组委会, 2005~高教社杯全国大学生数学建模竞赛论文格式规范, 2005
+\end{thebibliography}
+
+\end{document}

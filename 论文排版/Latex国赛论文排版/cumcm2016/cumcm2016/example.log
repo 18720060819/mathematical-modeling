@@ -1,0 +1,3449 @@
+This is TeX, Version 3.14159 (MiKTeX 2 UP 1) (preloaded format=latex 2000.11.28)  28 SEP 2008 21:38
+**example.tex
+(example.tex
+LaTeX2e <2000/06/01>
+Babel <v3.6Z> and hyphenation patterns for english, french, german, ngerman, du
+mylang, nohyphenation, loaded.
+(cumcmart.cls
+Document Class: cumcmart 2005/06/14 v050601, by Mao Ziyang
+(D:\PROGRA~1\latex\ctex\MiKTeX\LocalTeXMF\tex\latex\cct\cctart.cls
+Document Class: cctart 1997/12/10 Derived from the `article' class
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\base\article.cls
+Document Class: article 2000/05/19 v1.4b Standard LaTeX document class
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\base\size11.clo
+File: size11.clo 2000/05/19 v1.4b Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(D:\PROGRA~1\latex\ctex\MiKTeX\LocalTeXMF\tex\latex\cct\cctbase.sty
+Package: cctbase 1997/12/10 Custom definitions for CCT
+
+(D:\PROGRA~1\latex\ctex\MiKTeX\LocalTeXMF\tex\latex\cct\cchead.sty
+\!ZihaoNo=\count87
+\ccwd=\dimen103
+\ccht=\dimen104
+\ccdp=\dimen105
+\!ccbox=\box26
+\!ccbdskip=\skip43
+)))
+\displaytitle=\toks14
+\school=\toks15
+\authorone=\toks16
+\authortwo=\toks17
+\authorthree=\toks18
+\advisor=\toks19
+\c@theorem=\count88
+\c@proposition=\count89
+\c@lemma=\count90
+\c@corollary=\count91
+\c@definition=\count92
+\c@example=\count93
+)
+
+! LaTeX Error: Two \documentclass or \documentstyle commands.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                      
+                                          
+l.2 \documentclass[12pt,a4paper]{
+                                 article}
+? 
+(D:\PROGRA~1\latex\ctex\MiKTeX\LocalTeXMF\tex\latex\CJK\CJK.sty
+Package: CJK 1999/06/20 4.3.0
+
+(D:\PROGRA~1\latex\ctex\MiKTeX\LocalTeXMF\tex\latex\CJK\CJK.enc
+File: CJK.enc 1999/06/20 4.3.0
+LaTeX Font Info:    Redeclaring font encoding C49 on input line 519.
+LaTeX Font Info:    Redeclaring font encoding C42 on input line 520.
+)
+LaTeX Info: Redefining \selectfont on input line 646.
+)
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 42.
+)
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\tools\bm.sty
+Package: bm 1999/07/05 v1.0g Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup5
+\symboldletters=\mathgroup6
+\symboldsymbols=\mathgroup7
+\symboldlasy=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
+LaTeX Info: Redefining \bm on input line 195.
+)
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\amslatex\amsmath.sty
+Package: amsmath 2000/06/06 v2.12 AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\amslatex\amstext.sty
+Package: amstext 1999/11/15 v2.0
+
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\amslatex\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks20
+\ex@=\dimen106
+))
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\amslatex\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+LaTeX Info: Redefining \boldsymbol on input line 54.
+\pmbraise@=\dimen107
+)
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\amslatex\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count94
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count95
+\leftroot@=\count96
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count97
+\DOTSCASE@=\count98
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
+\dotsspace@=\muskip10
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
+\tag@help=\toks21
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
+\andhelp@=\toks22
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks23
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2662.
+LaTeX Info: Redefining \] on input line 2663.
+)
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 1996/11/03 v2.2b
+
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 1997/09/17 v2.2e
+\symAMSa=\mathgroup9
+\symAMSb=\mathgroup10
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 133.
+))
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\tools\indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+
+! LaTeX Error: File `xcolor.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\amslatex\amsthm.sty
+Package: amsthm 2000/06/02 v2.07
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip47
+\thm@postskip=\skip48
+\thm@headsep=\skip49
+\dth@everypar=\toks30
+)
+(D:\PROGRA~1\latex\ctex\MiKTeX\LocalTeXMF\tex\latex\ltxmisc\cases.sty
+Package: cases 2000/05/10 ver 2.3 
+)
+(D:\PROGRA~1\latex\ctex\MiKTeX\LocalTeXMF\tex\latex\wasysym\wasysym.sty
+Package: wasysym 1999/05/13 v1.0i Wasy-2 symbol support package
+\symwasy=\mathgroup11
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 50.
+)
+(example.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+
+
+Package CJK Warning: \MakeUppercase disabled for `GBK' encoding.
+
+(D:\PROGRA~1\latex\ctex\MiKTeX\LocalTeXMF\tex\latex\CJK\standard.bdg
+File: standard.bdg 1999/06/20 4.3.0
+)
+(D:\PROGRA~1\latex\ctex\MiKTeX\LocalTeXMF\tex\latex\CJK\extended.enc
+File: extended.enc 1999/06/20 4.3.0
+)
+(D:\PROGRA~1\latex\ctex\MiKTeX\LocalTeXMF\tex\latex\CJK\extended.chr
+File: extended.chr 1999/06/20 4.3.0
+)
+! Undefined control sequence.
+l.43 \CJKtilde\CJKindent
+                        
+? 
+(declaration.tex
+LaTeX Font Info:    Try loading font information for C19+song on input line 3.
+
+(D:\PROGRA~1\latex\ctex\MiKTeX\LocalTeXMF\tex\latex\CJK\GB\c19song.fd
+File: c19song.fd 1999/06/20 4.3.0
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 14.
+
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2eLaTeX symbol font definitions
+)
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 14.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 14.
+LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 1995/01/05 v2.2e AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+
+(D:\PROGRA~1\latex\ctex\MiKTeX\TeXMF\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 1995/01/05 v2.2e AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+wasy on input line 14.
+
+(D:\PROGRA~1\latex\ctex\MiKTeX\LocalTeXMF\tex\latex\wasysym\uwasy.fd
+File: uwasy.fd 1999/05/13 v1.0iWasy-2 symbol font definitions
+)
+Overfull \hbox (9.55762pt too wide) in paragraph at lines 25--30
+[][][] 
+ []
+
+[1
+
+]) [2]
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 63.
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [1
+
+]
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.73 \section{Œ Ã‚µƒ÷ÿ ˆ}
+                         
+? 
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.75> not available
+(Font)              size <14.4> substituted on input line 73.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13.75> not available
+(Font)              size <14.4> substituted on input line 73.
+
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.74 \section{Œ Ã‚∑÷Œˆ}
+                       
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.75 \section{ºŸ…Ë”Î∑˚∫≈}
+                         
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing = inserted for \ifdim.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.76 \section{ƒ£–ÕµƒΩ®¡¢”Î«ÛΩ‚}
+                               
+? 
+
+! LaTeX Error: No counter '{∂®“Â}' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                      
+                                          
+l.81   ∂
+        ®“Âµƒ¿˝◊”°£
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                      
+                                          
+l.81   ∂®
+         “Âµƒ¿˝◊”°£
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                      
+                                          
+l.81   ∂®
+         “Âµƒ¿˝◊”°£
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                      
+                                          
+l.81   ∂®
+         “Âµƒ¿˝◊”°£
+? 
+! Improper alphabetic constant.
+<to be read again> 
+                   \thmnumber 
+l.81   ∂®
+         “Âµƒ¿˝◊”°£
+? 
+
+! Package CJK Error: Invalid character code.
+
+See the CJK package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                      
+                                          
+l.81   ∂®
+         “Âµƒ¿˝◊”°£
+? 
+Missing character: There is no û in font gbksong93!
+! Improper alphabetic constant.
+<to be read again> 
+                   \end 
+l.82 \end
+         {definition}
+? 
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   \end< 
+l.82 \end
+         {definition}
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \end< 
+l.82 \end
+         {definition}
+? 
+! Improper alphabetic constant.
+<to be read again> 
+                   \end 
+l.82 \end
+         {definition}
+? 
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   \end> 
+l.82 \end
+         {definition}
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \end> 
+l.82 \end
+         {definition}
+? 
+! Improper alphabetic constant.
+<to be read again> 
+                   \end 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.82 \end
+         {definition}
+? 
