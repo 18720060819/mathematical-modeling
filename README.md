@@ -1,25 +1,13 @@
 # Mathematical-Modeling
 
-#### 介绍
-本科生数学建模、研究生数学建模、优秀论文、各类算法代码、论文模板、参考书籍
+## 📒简介
+- 🔥此项目为自学数学建模整理的笔记和资料，包括但不限于国赛、研赛及美赛优秀论文，论文排版，按模型分类的论文参考，算法代码，参考书籍，matlab、spss、lingo、latex等各类软件教程......
+- 🔥全国大学生数学竞赛一等奖（预赛）；全国大学生数学建模竞赛二等奖
+- 🔥此项目开源旨在帮助更多数学建模爱好者和初学者尽可能高效、全面地学习！
+- 🔥如果你觉得它对你很有帮助, 请你也分享给需要学习的朋友们！
+- 🔥如果觉得有用，请点个star 吧！谢谢！
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
+## 🍭 如何参与开源项目
 
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支
@@ -27,11 +15,6 @@
 4.  新建 Pull Request
 
 
-#### 特技
+## 📐 注意
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+**其中部分内容整理自互联网资料，侵权删！**
