@@ -1,0 +1,1085 @@
+----------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  D:\Program Files\Stata11.1\ch7.log
+  log type:  text
+ opened on:  18 Jun 2011, 11:09:08
+
+. set more 1;
+
+. ***********************************;
+. *;
+. *  MCAS Data and Resutls ****;
+. * selected variable definitions:
+> * code           District Code (numerical)
+> * municipa       Municipality (name)
+> * district       District Name
+> * totsc4         4th grade score (math+english+science) 
+> * totsc8         8th grade score (math+english+science) 
+> * regday         Spending per pupil, regular
+> * specneed       Spending per pupil, special needs
+> * bilingua       Spending per pupil, bilingual
+> * occupday       Spending per pupil, occupational
+> * tot_day        Spending per pupil, Total
+> * tchratio       Students per Teacher
+> * s_p_c          Students per Computer
+> * spec_ed        % Special Education Students
+> * lnch_pct       % Eligible for free/reduced price lunch
+> * avgsalry       Average Teacher Salary
+> * percap         Per Capita Income
+> * pctel          Percent English Learners
+> ***********************************
+> *** Modify the next line so that the path is correct for your data;
+. use mcas.dta;
+
+. **************************************************************;
+. * Table 7.1 ;
+. **************************************************************;
+. * rename variables -- same as CA dataset;
+. gen str = tchratio;
+
+. gen testscr=totsc4;
+
+. gen el_pct = pctel;
+
+. gen avginc = percap;
+
+. gen meal_pct = lnch_pct;
+
+. summarize testscr str el_pct meal_pct avginc;
+
+    Variable |       Obs        Mean    Std. Dev.       Min        Max
+-------------+--------------------------------------------------------
+     testscr |       220    709.8273    15.12647        658        740
+         str |       220    17.34409    2.276666       11.4         27
+      el_pct |       220    1.117676     2.90094          0   24.49393
+    meal_pct |       220    15.31591    15.06007         .4       76.2
+      avginc |       220    18.74676    5.807637      9.686     46.855
+
+. summarize el_pct, detail;
+
+                           el_pct
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            0              0
+ 5%            0              0
+10%            0              0       Obs                 220
+25%            0              0       Sum of Wgt.         220
+
+50%            0                      Mean           1.117676
+                        Largest       Std. Dev.       2.90094
+75%     .8869223        12.2449
+90%     2.882982       14.83458       Variance       8.415454
+95%      6.02681       16.19772       Skewness       4.557856
+99%     14.83458       24.49393       Kurtosis       28.34964
+
+. ***********************************************************;
+. **** Table 7.2 ;
+. ***********************************************************;
+. **************************************************************;
+. ***** Transformed Variables ********;
+. *************************************************************;
+. gen avginc2 = avginc*avginc;
+
+. gen avginc3 = avginc2*avginc;
+
+. gen loginc = ln(avginc);
+
+. gen hiel = (el_pct > 0);
+
+. gen strxhiel = str*hiel;
+
+. gen sttr2 = str*str;
+
+. gen sttr3 = sttr2*str;
+
+. ****;
+. ** Col(1);
+. reg testscr str, r;
+
+Linear regression                                      Number of obs =     220
+                                                       F(  1,   218) =   11.85
+                                                       Prob > F      =  0.0007
+                                                       R-squared     =  0.0668
+                                                       Root MSE      =  14.646
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |   -1.71781   .4990641    -3.44   0.001    -2.701418   -.7342018
+       _cons |   739.6211   8.607268    85.93   0.000      722.657    756.5852
+------------------------------------------------------------------------------
+
+. dis "Adjusted Rsquared = " _result(8);
+Adjusted Rsquared = .06256517
+
+. ** Col(2);
+. reg testscr str el_pct meal_pct loginc, r;
+
+Linear regression                                      Number of obs =     220
+                                                       F(  4,   215) =  144.36
+                                                       Prob > F      =  0.0000
+                                                       R-squared     =  0.6763
+                                                       Root MSE      =  8.6862
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |  -.6891794   .2699725    -2.55   0.011    -1.221311   -.1570476
+      el_pct |  -.4107453   .3063768    -1.34   0.181    -1.014632    .1931414
+    meal_pct |  -.5214653   .0776589    -6.71   0.000    -.6745356    -.368395
+      loginc |   16.52936   3.145722     5.25   0.000     10.32896    22.72976
+       _cons |   682.4316   11.49724    59.36   0.000     659.7698    705.0933
+------------------------------------------------------------------------------
+
+. dis "Adjusted Rsquared = " _result(8);
+Adjusted Rsquared = .67024735
+
+. ** Col(3);
+. reg testscr str el_pct meal_pct avginc avginc2 avginc3, r;
+
+Linear regression                                      Number of obs =     220
+                                                       F(  6,   213) =  110.22
+                                                       Prob > F      =  0.0000
+                                                       R-squared     =  0.6851
+                                                       Root MSE      =  8.6072
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |  -.6409088   .2684814    -2.39   0.018     -1.17013    -.111688
+      el_pct |  -.4371183   .3033244    -1.44   0.151    -1.035021    .1607839
+    meal_pct |  -.5818187   .0973534    -5.98   0.000    -.7737183   -.3899192
+      avginc |  -3.066692   2.352534    -1.30   0.194    -7.703922    1.570537
+     avginc2 |   .1636889     .08533     1.92   0.056    -.0045105    .3318883
+     avginc3 |  -.0021793   .0009703    -2.25   0.026    -.0040919   -.0002666
+       _cons |    744.025   21.31777    34.90   0.000     702.0042    786.0459
+------------------------------------------------------------------------------
+
+. dis "Adjusted Rsquared = " _result(8);
+Adjusted Rsquared = .67622278
+
+. test avginc2 avginc3;
+
+ ( 1)  avginc2 = 0
+ ( 2)  avginc3 = 0
+
+       F(  2,   213) =    7.74
+            Prob > F =    0.0006
+
+. ** Col(4);
+. reg testscr str sttr2 sttr3 el_pct meal_pct avginc avginc2 avginc3, r;
+
+Linear regression                                      Number of obs =     220
+                                                       F(  8,   211) =  105.73
+                                                       Prob > F      =  0.0000
+                                                       R-squared     =  0.6867
+                                                       Root MSE      =  8.6261
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |   12.42578   14.01017     0.89   0.376    -15.19207    40.04362
+       sttr2 |   -.680292   .7365192    -0.92   0.357    -2.132171    .7715867
+       sttr3 |   .0114735   .0126663     0.91   0.366    -.0134951    .0364421
+      el_pct |  -.4341658   .2997884    -1.45   0.149     -1.02513    .1567982
+    meal_pct |  -.5872163   .1040206    -5.65   0.000    -.7922691   -.3821634
+      avginc |  -3.381531   2.490682    -1.36   0.176    -8.291339    1.528277
+     avginc2 |   .1741016   .0892595     1.95   0.052    -.0018531    .3500563
+     avginc3 |  -.0022883   .0010078    -2.27   0.024     -.004275   -.0003017
+       _cons |   665.4972   81.33183     8.18   0.000     505.1701    825.8242
+------------------------------------------------------------------------------
+
+. dis "Adjusted Rsquared = " _result(8);
+Adjusted Rsquared = .67479478
+
+. test str sttr2 sttr3;
+
+ ( 1)  str = 0
+ ( 2)  sttr2 = 0
+ ( 3)  sttr3 = 0
+
+       F(  3,   211) =    2.86
+            Prob > F =    0.0381
+
+. test sttr2 sttr3;
+
+ ( 1)  sttr2 = 0
+ ( 2)  sttr3 = 0
+
+       F(  2,   211) =    0.45
+            Prob > F =    0.6406
+
+. test avginc2 avginc3;
+
+ ( 1)  avginc2 = 0
+ ( 2)  avginc3 = 0
+
+       F(  2,   211) =    7.75
+            Prob > F =    0.0006
+
+. ** Col(5);
+. reg testscr str hiel strxhiel meal_pct avginc avginc2 avginc3, r;
+
+Linear regression                                      Number of obs =     220
+                                                       F(  7,   212) =   73.02
+                                                       Prob > F      =  0.0000
+                                                       R-squared     =  0.6855
+                                                       Root MSE      =  8.6214
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |  -1.017681   .3703923    -2.75   0.007    -1.747804    -.287557
+        hiel |  -12.56073   9.793459    -1.28   0.201    -31.86577      6.7443
+    strxhiel |   .7986123   .5552225     1.44   0.152    -.2958518    1.893076
+    meal_pct |  -.7085098   .0908442    -7.80   0.000    -.8875834   -.5294362
+      avginc |  -3.866509     2.4884    -1.55   0.122    -8.771685    1.038666
+     avginc2 |   .1841251   .0898247     2.05   0.042     .0070611     .361189
+     avginc3 |  -.0023364   .0010153    -2.30   0.022    -.0043377   -.0003351
+       _cons |   759.9142   23.23312    32.71   0.000     714.1167    805.7118
+------------------------------------------------------------------------------
+
+. dis "Adjusted Rsquared = " _result(8);
+Adjusted Rsquared = .67515039
+
+. test str strxhiel;
+
+ ( 1)  str = 0
+ ( 2)  strxhiel = 0
+
+       F(  2,   212) =    4.01
+            Prob > F =    0.0196
+
+. test avginc2 avginc3;
+
+ ( 1)  avginc2 = 0
+ ( 2)  avginc3 = 0
+
+       F(  2,   212) =    5.85
+            Prob > F =    0.0034
+
+. test hiel strxhiel;
+
+ ( 1)  hiel = 0
+ ( 2)  strxhiel = 0
+
+       F(  2,   212) =    1.58
+            Prob > F =    0.2077
+
+.  ** Col(6);
+. reg testscr str meal_pct avginc avginc2 avginc3, r;
+
+Linear regression                                      Number of obs =     220
+                                                       F(  5,   214) =  109.05
+                                                       Prob > F      =  0.0000
+                                                       R-squared     =  0.6815
+                                                       Root MSE      =  8.6365
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |  -.6718786   .2712806    -2.48   0.014    -1.206603   -.1371544
+    meal_pct |  -.6530754   .0729801    -8.95   0.000    -.7969274   -.5092234
+      avginc |  -3.217954   2.305704    -1.40   0.164    -7.762754    1.326845
+     avginc2 |   .1647873   .0846338     1.95   0.053    -.0020354    .3316099
+     avginc3 |   -.002155   .0009699    -2.22   0.027    -.0040669   -.0002431
+       _cons |   747.3639   20.27779    36.86   0.000     707.3941    787.3337
+------------------------------------------------------------------------------
+
+. dis "Adjusted Rsquared = " _result(8);
+Adjusted Rsquared = .6740096
+
+. test avginc2 avginc3;
+
+ ( 1)  avginc2 = 0
+ ( 2)  avginc3 = 0
+
+       F(  2,   214) =    6.55
+            Prob > F =    0.0017
+
+. *;
+. clear;
+
+. *;
+. ***************************************************************
+> **** CA data ;
+. ***************************************************************;
+. *** Modify the next line so that the path is correct for your data;
+. use caschool.dta;
+
+. *;
+. *;
+. * Decription of Data;
+. * dist_code -- district Code;
+. * Read_scr  -- avg Reading Score;
+. * Math_scr  -- avg Math Score;
+. * County   --  county;
+. * District -- District;
+. * gr_span -- grade span of district;
+. * enrl_tot -- total enrollment;
+. * teachers -- number of teachers;
+. * computer -- number of computers;
+. * testscr -- avg test score (= (read_scr+math_scr)/2 );
+. * comp_stu -- computers per student ( = computer/enrl_tot);
+. * expn_stu -- expentitures per student;
+. * str -- student teacher ration (teachers/enrl_tot);
+. * el_pct -- percent of English Learners;
+. * Meal_pct -- Percent qualifying for reduced-price lunch;
+. * calw_pct -- Percent qualifying for CalWorks;
+. * avginc -- district average income (in $1000's);
+. **************************************************************;
+. summarize testscr str el_pct meal_pct avginc;
+
+    Variable |       Obs        Mean    Std. Dev.       Min        Max
+-------------+--------------------------------------------------------
+     testscr |       420    654.1565    19.05335     605.55     706.75
+         str |       420    19.64043    1.891812         14       25.8
+      el_pct |       420    15.76816    18.28593          0   85.53972
+    meal_pct |       420    44.70524    27.12338          0        100
+      avginc |       420    15.31659     7.22589      5.335     55.328
+
+. **************************************************************;
+. ***** Transformed Variables ********;
+. *************************************************************;
+. gen loginc = ln(avginc);
+
+. gen strxelpc = str*el_pct;
+
+. gen sttr2 = str*str;
+
+. gen sttr3 = sttr2*str;
+
+. * --- Table 6.2 Results .... repeated here ;
+. ** col(2);
+. reg testscr str el_pct meal_pct loginc, r;
+
+Linear regression                                      Number of obs =     420
+                                                       F(  4,   415) =  417.20
+                                                       Prob > F      =  0.0000
+                                                       R-squared     =  0.7962
+                                                       Root MSE      =  8.6426
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |   -.734326   .2567803    -2.86   0.004    -1.239078   -.2295738
+      el_pct |  -.1755344   .0336606    -5.21   0.000     -.241701   -.1093678
+    meal_pct |  -.3982342   .0331741   -12.00   0.000    -.4634443    -.333024
+      loginc |   11.56897   1.818811     6.36   0.000     7.993736     15.1442
+       _cons |    658.552   8.641528    76.21   0.000     641.5653    675.5386
+------------------------------------------------------------------------------
+
+. ** col(7);
+. reg testscr str sttr2 sttr3 el_pct meal_pct loginc, r;
+
+Linear regression                                      Number of obs =     420
+                                                       F(  6,   413) =  280.81
+                                                       Prob > F      =  0.0000
+                                                       R-squared     =  0.8007
+                                                       Root MSE      =  8.5679
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |   65.28538    25.2587     2.58   0.010     15.63373     114.937
+       sttr2 |  -3.465538   1.270896    -2.73   0.007     -5.96377   -.9673057
+       sttr3 |   .0599085   .0211206     2.84   0.005     .0183912    .1014258
+      el_pct |  -.1656868   .0343658    -4.82   0.000    -.2332404   -.0981332
+    meal_pct |  -.4024178   .0332667   -12.10   0.000    -.4678109   -.3370247
+      loginc |   11.50893   1.806404     6.37   0.000     7.958041    15.05983
+       _cons |   244.8062   165.7225     1.48   0.140     -80.9585    570.5709
+------------------------------------------------------------------------------
+
+. vce;
+
+Covariance matrix of coefficients of regress model
+
+        e(V) |        str       sttr2       sttr3      el_pct    meal_pct 
+-------------+------------------------------------------------------------
+         str |  638.00198                                                 
+       sttr2 |  -32.05146   1.6151778                                     
+       sttr3 |  .53031283  -.02680341   .00044608                         
+      el_pct |  .10992729  -.00612655    .0001098   .00118101             
+    meal_pct | -.11239465   .00620331   -.0001099  -.00079129   .00110667 
+      loginc | -1.5281123   .08776476  -.00154227  -.01946139   .04504705 
+       _cons | -4174.7123   208.99383  -3.4468899  -.56080651   .49105402 
+
+        e(V) |     loginc       _cons 
+-------------+------------------------
+      loginc |  3.2630954             
+       _cons | -2.5604998   27463.935 
+
+. scalar x1=20;
+
+. scalar x2=18;
+
+. scalar d1 = x2-x1;
+
+. scalar d2 = (x2*x2)-(x1*x1);
+
+. scalar d3 =  (x2*x2*x2)-(x1*x1*x1);
+
+. scalar dif = d1*_b[str]+d2*_b[sttr2]+d3*_b[sttr3];
+
+. dis "Change from 20 to 18 = " dif;
+Change from 20 to 18 = 2.9284841
+
+. matrix b = get(_b);
+
+. matrix vb = get(VCE);
+
+. matrix d = (d1,d2,d3,0,0,0,0);
+
+. matrix ve = d*vb*d';
+
+. display "Variance of Difference   ";
+Variance of Difference   
+
+. matrix list ve;
+
+symmetric ve[1,1]
+           r1
+r1  .48896454
+
+. matrix list vb;
+
+symmetric vb[7,7]
+                 str       sttr2       sttr3      el_pct    meal_pct      loginc
+     str   638.00198
+   sttr2   -32.05146   1.6151778
+   sttr3   .53031283  -.02680341   .00044608
+  el_pct   .10992729  -.00612655    .0001098   .00118101
+meal_pct  -.11239465   .00620331   -.0001099  -.00079129   .00110667
+  loginc  -1.5281123   .08776476  -.00154227  -.01946139   .04504705   3.2630954
+   _cons  -4174.7123   208.99383  -3.4468899  -.56080651   .49105402  -2.5604998
+
+               _cons
+   _cons   27463.935
+
+. matrix list d;
+
+d[1,7]
+       c1     c2     c3     c4     c5     c6     c7
+r1     -2    -76  -2168      0      0      0      0
+
+. matrix temp = d*vb;
+
+. matrix list temp;
+
+temp[1,7]
+           str       sttr2       sttr3      el_pct    meal_pct      loginc
+r1   10.188776  -.54080848   .00933345   .00770647   -.0083921  -.27026535
+
+         _cons
+r1  -61.249253
+
+. test d1*str+d2*sttr2+d3*sttr3 = 0;
+
+ ( 1)  - 2*str - 76*sttr2 - 2168*sttr3 = 0
+
+       F(  1,   413) =   17.54
+            Prob > F =    0.0000
+
+. scalar x1=22;
+
+. scalar x2=20;
+
+. scalar d1 = x2-x1;
+
+. scalar d2 = (x2*x2)-(x1*x1);
+
+. scalar d3 =  (x2*x2*x2)-(x1*x1*x1);
+
+. scalar dif = d1*_b[str]+d2*_b[sttr2]+d3*_b[sttr3];
+
+. dis "Change from 22 to 20 = " dif;
+Change from 22 to 20 = 1.8967053
+
+. matrix b = get(_b);
+
+. matrix vb = get(VCE);
+
+. matrix d = (d1,d2,d3,0,0,0,0);
+
+. matrix ve = d*vb*d';
+
+. display "Variance of Difference   ";
+Variance of Difference   
+
+. matrix list ve;
+
+symmetric ve[1,1]
+           r1
+r1  .47965809
+
+. test d1*str+d2*sttr2+d3*sttr3 = 0;
+
+ ( 1)  - 2*str - 84*sttr2 - 2648*sttr3 = 0
+
+       F(  1,   413) =    7.50
+            Prob > F =    0.0064
+
+. log close
+
+end of do-file
+
+. do "D:\Program Files\Stata11.1\181回归模型的有效性.do"
+
+. ********************马萨诸塞州的数据定义**************************************;
+. 
+. use mcas.dta,clear
+
+. * code           District Code (numerical)
+. * municipa       Municipality (name)
+. * district       District Name
+. * totsc4         4th grade score (math+english+science) 
+. * totsc8         8th grade score (math+english+science) 
+. * regday         Spending per pupil, regular
+. * specneed       Spending per pupil, special needs
+. * bilingua       Spending per pupil, bilingual
+. * occupday       Spending per pupil, occupational
+. * tot_day        Spending per pupil, Total
+. * tchratio       Students per Teacher
+. * s_p_c          Students per Computer
+. * spec_ed        % Special Education Students
+. * lnch_pct       % Eligible for free/reduced price lunch
+. * avgsalry       Average Teacher Salary
+. * percap         Per Capita Income
+. * pctel          Percent English Learners
+. 
+. ************生成新变量名，使之与加州数据一致************************************
+> ************;
+. * rename variables -- same as CA dataset;
+. gen str = tchratio;
+tchratio; invalid name
+r(198);
+
+end of do-file
+
+r(198);
+
+. clear
+
+. do "D:\Program Files\Stata11.1\181回归模型的有效性.do"
+
+. ********************马萨诸塞州的数据定义**************************************;
+. 
+. use mcas.dta,clear
+
+. * code           District Code (numerical)
+. * municipa       Municipality (name)
+. * district       District Name
+. * totsc4         4th grade score (math+english+science) 
+. * totsc8         8th grade score (math+english+science) 
+. * regday         Spending per pupil, regular
+. * specneed       Spending per pupil, special needs
+. * bilingua       Spending per pupil, bilingual
+. * occupday       Spending per pupil, occupational
+. * tot_day        Spending per pupil, Total
+. * tchratio       Students per Teacher
+. * s_p_c          Students per Computer
+. * spec_ed        % Special Education Students
+. * lnch_pct       % Eligible for free/reduced price lunch
+. * avgsalry       Average Teacher Salary
+. * percap         Per Capita Income
+. * pctel          Percent English Learners
+. 
+. ************生成新变量名，使之与加州数据一致************************************
+> ************;
+. * rename variables -- same as CA dataset;
+. gen str =tchratio;
+tchratio; invalid name
+r(198);
+
+end of do-file
+
+r(198);
+
+. clear
+
+. do "D:\Program Files\Stata11.1\ch7.do"
+
+. ********************马萨诸塞州的数据定义**************************************;
+. 
+. use mcas.dta,clear
+
+. * code           District Code (numerical)
+. * municipa       Municipality (name)
+. * district       District Name
+. * totsc4         4th grade score (math+english+science) 
+. * totsc8         8th grade score (math+english+science) 
+. * regday         Spending per pupil, regular
+. * specneed       Spending per pupil, special needs
+. * bilingua       Spending per pupil, bilingual
+. * occupday       Spending per pupil, occupational
+. * tot_day        Spending per pupil, Total
+. * tchratio       Students per Teacher
+. * s_p_c          Students per Computer
+. * spec_ed        % Special Education Students
+. * lnch_pct       % Eligible for free/reduced price lunch
+. * avgsalry       Average Teacher Salary
+. * percap         Per Capita Income
+. * pctel          Percent English Learners
+. 
+. ************生成新变量名，使之与加州数据一致************************************
+> ************;
+. * rename variables -- same as CA dataset;
+. gen str = tchratio;
+tchratio; invalid name
+r(198);
+
+end of do-file
+
+r(198);
+
+. clear
+
+. do "D:\Program Files\Stata11.1\181回归模型的有效性.do"
+
+. ********************马萨诸塞州的数据定义**************************************;
+. 
+. use mcas.dta,clear
+
+. * code           District Code (numerical)
+. * municipa       Municipality (name)
+. * district       District Name
+. * totsc4         4th grade score (math+english+science) 
+. * totsc8         8th grade score (math+english+science) 
+. * regday         Spending per pupil, regular
+. * specneed       Spending per pupil, special needs
+. * bilingua       Spending per pupil, bilingual
+. * occupday       Spending per pupil, occupational
+. * tot_day        Spending per pupil, Total
+. * tchratio       Students per Teacher
+. * s_p_c          Students per Computer
+. * spec_ed        % Special Education Students
+. * lnch_pct       % Eligible for free/reduced price lunch
+. * avgsalry       Average Teacher Salary
+. * percap         Per Capita Income
+. * pctel          Percent English Learners
+. 
+. ************生成新变量名，使之与加州数据一致************************************
+> ************;
+. * rename variables -- same as CA dataset;
+. gen str = tchratio
+
+. gen testscr=totsc4
+
+. gen el_pct = pctel
+
+. gen avginc = percap
+
+. gen meal_pct = lnch_pct
+
+. gen avginc2 = avginc*avginc
+
+. gen avginc3 = avginc2*avginc
+
+. gen loginc = ln(avginc)
+
+. gen hiel = (el_pct > 0)
+
+. gen strxhiel = str*hiel
+
+. gen sttr2 = str*str
+
+. gen sttr3 = sttr2*str
+
+. 
+. ***************描述性统计分析********************************************
+. 
+. summarize testscr str el_pct meal_pct avginc
+
+    Variable |       Obs        Mean    Std. Dev.       Min        Max
+-------------+--------------------------------------------------------
+     testscr |       220    709.8273    15.12647        658        740
+         str |       220    17.34409    2.276666       11.4         27
+      el_pct |       220    1.117676     2.90094          0   24.49393
+    meal_pct |       220    15.31591    15.06007         .4       76.2
+      avginc |       220    18.74676    5.807637      9.686     46.855
+
+. summarize el_pct, detail
+
+                           el_pct
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            0              0
+ 5%            0              0
+10%            0              0       Obs                 220
+25%            0              0       Sum of Wgt.         220
+
+50%            0                      Mean           1.117676
+                        Largest       Std. Dev.       2.90094
+75%     .8869223        12.2449
+90%     2.882982       14.83458       Variance       8.415454
+95%      6.02681       16.19772       Skewness       4.557856
+99%     14.83458       24.49393       Kurtosis       28.34964
+
+. ***********************************************************;
+. 
+. *******************回归分析******************************************;
+. 
+. reg testscr str, r;
+option ; not allowed
+r(198);
+
+end of do-file
+
+r(198);
+
+. clear
+
+. do "D:\Program Files\Stata11.1\181回归模型的有效性.do"
+
+. ********************马萨诸塞州的数据定义**************************************;
+. 
+. use mcas.dta,clear
+
+. * code           District Code (numerical)
+. * municipa       Municipality (name)
+. * district       District Name
+. * totsc4         4th grade score (math+english+science) 
+. * totsc8         8th grade score (math+english+science) 
+. * regday         Spending per pupil, regular
+. * specneed       Spending per pupil, special needs
+. * bilingua       Spending per pupil, bilingual
+. * occupday       Spending per pupil, occupational
+. * tot_day        Spending per pupil, Total
+. * tchratio       Students per Teacher
+. * s_p_c          Students per Computer
+. * spec_ed        % Special Education Students
+. * lnch_pct       % Eligible for free/reduced price lunch
+. * avgsalry       Average Teacher Salary
+. * percap         Per Capita Income
+. * pctel          Percent English Learners
+. 
+. ************生成新变量名，使之与加州数据一致************************************
+> ************;
+. * rename variables -- same as CA dataset;
+. gen str = tchratio
+
+. gen testscr=totsc4
+
+. gen el_pct = pctel
+
+. gen avginc = percap
+
+. gen meal_pct = lnch_pct
+
+. gen avginc2 = avginc*avginc
+
+. gen avginc3 = avginc2*avginc
+
+. gen loginc = ln(avginc)
+
+. gen hiel = (el_pct > 0)
+
+. gen strxhiel = str*hiel
+
+. gen sttr2 = str*str
+
+. gen sttr3 = sttr2*str
+
+. 
+. ***************描述性统计分析********************************************
+. 
+. summarize testscr str el_pct meal_pct avginc
+
+    Variable |       Obs        Mean    Std. Dev.       Min        Max
+-------------+--------------------------------------------------------
+     testscr |       220    709.8273    15.12647        658        740
+         str |       220    17.34409    2.276666       11.4         27
+      el_pct |       220    1.117676     2.90094          0   24.49393
+    meal_pct |       220    15.31591    15.06007         .4       76.2
+      avginc |       220    18.74676    5.807637      9.686     46.855
+
+. summarize el_pct, detail
+
+                           el_pct
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            0              0
+ 5%            0              0
+10%            0              0       Obs                 220
+25%            0              0       Sum of Wgt.         220
+
+50%            0                      Mean           1.117676
+                        Largest       Std. Dev.       2.90094
+75%     .8869223        12.2449
+90%     2.882982       14.83458       Variance       8.415454
+95%      6.02681       16.19772       Skewness       4.557856
+99%     14.83458       24.49393       Kurtosis       28.34964
+
+. ***********************************************************;
+. 
+. *******************回归分析******************************************;
+. 
+. reg testscr str, r
+
+Linear regression                                      Number of obs =     220
+                                                       F(  1,   218) =   11.85
+                                                       Prob > F      =  0.0007
+                                                       R-squared     =  0.0668
+                                                       Root MSE      =  14.646
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |   -1.71781   .4990641    -3.44   0.001    -2.701418   -.7342018
+       _cons |   739.6211   8.607268    85.93   0.000      722.657    756.5852
+------------------------------------------------------------------------------
+
+. esti store m1
+
+. 
+. reg testscr str el_pct meal_pct loginc, r
+
+Linear regression                                      Number of obs =     220
+                                                       F(  4,   215) =  144.36
+                                                       Prob > F      =  0.0000
+                                                       R-squared     =  0.6763
+                                                       Root MSE      =  8.6862
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |  -.6891794   .2699725    -2.55   0.011    -1.221311   -.1570476
+      el_pct |  -.4107453   .3063768    -1.34   0.181    -1.014632    .1931414
+    meal_pct |  -.5214653   .0776589    -6.71   0.000    -.6745356    -.368395
+      loginc |   16.52936   3.145722     5.25   0.000     10.32896    22.72976
+       _cons |   682.4316   11.49724    59.36   0.000     659.7698    705.0933
+------------------------------------------------------------------------------
+
+. esti store m2
+
+. 
+. reg testscr str el_pct meal_pct avginc avginc2 avginc3, r
+
+Linear regression                                      Number of obs =     220
+                                                       F(  6,   213) =  110.22
+                                                       Prob > F      =  0.0000
+                                                       R-squared     =  0.6851
+                                                       Root MSE      =  8.6072
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |  -.6409088   .2684814    -2.39   0.018     -1.17013    -.111688
+      el_pct |  -.4371183   .3033244    -1.44   0.151    -1.035021    .1607839
+    meal_pct |  -.5818187   .0973534    -5.98   0.000    -.7737183   -.3899192
+      avginc |  -3.066692   2.352534    -1.30   0.194    -7.703922    1.570537
+     avginc2 |   .1636889     .08533     1.92   0.056    -.0045105    .3318883
+     avginc3 |  -.0021793   .0009703    -2.25   0.026    -.0040919   -.0002666
+       _cons |    744.025   21.31777    34.90   0.000     702.0042    786.0459
+------------------------------------------------------------------------------
+
+. esti store m3
+
+. test avginc2 avginc3
+
+ ( 1)  avginc2 = 0
+ ( 2)  avginc3 = 0
+
+       F(  2,   213) =    7.74
+            Prob > F =    0.0006
+
+. 
+. reg testscr str sttr2 sttr3 el_pct meal_pct avginc avginc2 avginc3, r
+
+Linear regression                                      Number of obs =     220
+                                                       F(  8,   211) =  105.73
+                                                       Prob > F      =  0.0000
+                                                       R-squared     =  0.6867
+                                                       Root MSE      =  8.6261
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |   12.42578   14.01017     0.89   0.376    -15.19207    40.04362
+       sttr2 |   -.680292   .7365192    -0.92   0.357    -2.132171    .7715867
+       sttr3 |   .0114735   .0126663     0.91   0.366    -.0134951    .0364421
+      el_pct |  -.4341658   .2997884    -1.45   0.149     -1.02513    .1567982
+    meal_pct |  -.5872163   .1040206    -5.65   0.000    -.7922691   -.3821634
+      avginc |  -3.381531   2.490682    -1.36   0.176    -8.291339    1.528277
+     avginc2 |   .1741016   .0892595     1.95   0.052    -.0018531    .3500563
+     avginc3 |  -.0022883   .0010078    -2.27   0.024     -.004275   -.0003017
+       _cons |   665.4972   81.33183     8.18   0.000     505.1701    825.8242
+------------------------------------------------------------------------------
+
+. esti store m4
+
+. test str sttr2 sttr3
+
+ ( 1)  str = 0
+ ( 2)  sttr2 = 0
+ ( 3)  sttr3 = 0
+
+       F(  3,   211) =    2.86
+            Prob > F =    0.0381
+
+. test sttr2 sttr3
+
+ ( 1)  sttr2 = 0
+ ( 2)  sttr3 = 0
+
+       F(  2,   211) =    0.45
+            Prob > F =    0.6406
+
+. test avginc2 avginc3
+
+ ( 1)  avginc2 = 0
+ ( 2)  avginc3 = 0
+
+       F(  2,   211) =    7.75
+            Prob > F =    0.0006
+
+. 
+. reg testscr str hiel strxhiel meal_pct avginc avginc2 avginc3, r
+
+Linear regression                                      Number of obs =     220
+                                                       F(  7,   212) =   73.02
+                                                       Prob > F      =  0.0000
+                                                       R-squared     =  0.6855
+                                                       Root MSE      =  8.6214
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |  -1.017681   .3703923    -2.75   0.007    -1.747804    -.287557
+        hiel |  -12.56073   9.793459    -1.28   0.201    -31.86577      6.7443
+    strxhiel |   .7986123   .5552225     1.44   0.152    -.2958518    1.893076
+    meal_pct |  -.7085098   .0908442    -7.80   0.000    -.8875834   -.5294362
+      avginc |  -3.866509     2.4884    -1.55   0.122    -8.771685    1.038666
+     avginc2 |   .1841251   .0898247     2.05   0.042     .0070611     .361189
+     avginc3 |  -.0023364   .0010153    -2.30   0.022    -.0043377   -.0003351
+       _cons |   759.9142   23.23312    32.71   0.000     714.1167    805.7118
+------------------------------------------------------------------------------
+
+. esti store m5
+
+. test str strxhiel
+
+ ( 1)  str = 0
+ ( 2)  strxhiel = 0
+
+       F(  2,   212) =    4.01
+            Prob > F =    0.0196
+
+. test avginc2 avginc3
+
+ ( 1)  avginc2 = 0
+ ( 2)  avginc3 = 0
+
+       F(  2,   212) =    5.85
+            Prob > F =    0.0034
+
+. test hiel strxhiel
+
+ ( 1)  hiel = 0
+ ( 2)  strxhiel = 0
+
+       F(  2,   212) =    1.58
+            Prob > F =    0.2077
+
+. 
+. reg testscr str meal_pct avginc avginc2 avginc3, r
+
+Linear regression                                      Number of obs =     220
+                                                       F(  5,   214) =  109.05
+                                                       Prob > F      =  0.0000
+                                                       R-squared     =  0.6815
+                                                       Root MSE      =  8.6365
+
+------------------------------------------------------------------------------
+             |               Robust
+     testscr |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         str |  -.6718786   .2712806    -2.48   0.014    -1.206603   -.1371544
+    meal_pct |  -.6530754   .0729801    -8.95   0.000    -.7969274   -.5092234
+      avginc |  -3.217954   2.305704    -1.40   0.164    -7.762754    1.326845
+     avginc2 |   .1647873   .0846338     1.95   0.053    -.0020354    .3316099
+     avginc3 |   -.002155   .0009699    -2.22   0.027    -.0040669   -.0002431
+       _cons |   747.3639   20.27779    36.86   0.000     707.3941    787.3337
+------------------------------------------------------------------------------
+
+. esti store m6
+
+. test avginc2 avginc3
+
+ ( 1)  avginc2 = 0
+ ( 2)  avginc3 = 0
+
+       F(  2,   214) =    6.55
+            Prob > F =    0.0017
+
+. esti table m*, stats(r2_a N) b (%5.2f) se (%5.3f)
+
+--------------------------------------------------------------------------
+    Variable |   m1        m2        m3        m4        m5        m6     
+-------------+------------------------------------------------------------
+         str |   -1.72     -0.69     -0.64     12.43     -1.02     -0.67  
+             |   0.499     0.270     0.268    14.010     0.370     0.271  
+      el_pct |             -0.41     -0.44     -0.43                      
+             |             0.306     0.303     0.300                      
+    meal_pct |             -0.52     -0.58     -0.59     -0.71     -0.65  
+             |             0.078     0.097     0.104     0.091     0.073  
+      loginc |             16.53                                          
+             |             3.146                                          
+      avginc |                       -3.07     -3.38     -3.87     -3.22  
+             |                       2.353     2.491     2.488     2.306  
+     avginc2 |                        0.16      0.17      0.18      0.16  
+             |                       0.085     0.089     0.090     0.085  
+     avginc3 |                       -0.00     -0.00     -0.00     -0.00  
+             |                       0.001     0.001     0.001     0.001  
+       sttr2 |                                 -0.68                      
+             |                                 0.737                      
+       sttr3 |                                  0.01                      
+             |                                 0.013                      
+        hiel |                                          -12.56            
+             |                                           9.793            
+    strxhiel |                                            0.80            
+             |                                           0.555            
+       _cons |  739.62    682.43    744.03    665.50    759.91    747.36  
+             |   8.607    11.497    21.318    81.332    23.233    20.278  
+-------------+------------------------------------------------------------
+        r2_a |    0.06      0.67      0.68      0.67      0.68      0.67  
+           N |     220       220       220       220       220       220  
+--------------------------------------------------------------------------
+                                                              legend: b/se
+
+. 
+. ***********************by 武晨笛 西南大学***************************************
+> *
+. 
+end of do-file
+
+. do "D:\Program Files\Stata11.1\ch6.do"
+
+. clear;
+; not allowed
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "D:\Program Files\Stata11.1\ch6.do"
+
+. clear
+
+. # delimit ;
+delimiter now ;
+. cap log close;

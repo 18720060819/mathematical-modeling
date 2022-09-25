@@ -1,0 +1,36 @@
+{smcl}
+{txt}{sf}{ul off}{.-}
+       log:  {res}D:\Program Files\Stata10\Stata10\myfile.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}29 May 2011, 16:59:24
+
+{com}. set more off
+
+. log off
+       {txt}log:  {res}D:\Program Files\Stata10\Stata10\myfile.smcl
+  {txt}log type:  {res}smcl
+ {txt}paused on:  {res}29 May 2011, 17:04:51
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}{smcl}
+{com}{sf}{ul off}{txt}{.-}
+       log:  {res}D:\Program Files\Stata10\Stata10\myfile.smcl
+  {txt}log type:  {res}smcl
+{txt}resumed on:  {res}29 May 2011, 17:05:51
+
+{com}. tab forei
+
+   {txt}Car type {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+   Domestic {c |}{res}         52       70.27       70.27
+{txt}    Foreign {c |}{res}         22       29.73      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         74      100.00
+
+{com}. log close
+       {txt}log:  {res}D:\Program Files\Stata10\Stata10\myfile.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}29 May 2011, 17:06:39
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
